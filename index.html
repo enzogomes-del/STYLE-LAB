@@ -1,13 +1,52 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="js/script.js"></script>
-</head>
+    <title>STYLE LAB | Descubra seu estilo</title>
 
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    
+
+    <main class="questionario">
+
+        <header class="cabecalho">
+            <h1>STYLE LAB</h1>
+            <p>Descubra seu estilo. Construa sua identidade.</p>
+        </header>
+
+        <section class="introducao" id="introducao">
+            <h2>Descubra seu estilo pessoal</h2>
+            <p>
+                Responda algumas perguntas e descubra quais estilos
+                mais combinam com sua personalidade e preferências.
+            </p>
+
+            <button id="iniciarQuestionario">
+                Começar questionário
+            </button>
+        </section>
+
+        <section class="area-perguntas" id="areaPerguntas" hidden>
+
+            <div class="progresso">
+                <span id="etapaAtual">Etapa 1 de 7</span>
+                <progress id="barraProgresso" value="1" max="7"></progress>
+            </div>
+
+            <div id="conteudoPergunta"></div>
+
+            <div class="botoes-navegacao">
+                <button id="voltarPergunta" disabled>Voltar</button>
+                <button id="proximaPergunta">Próxima</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
