@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore estilos | STYLE LAB</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="../index.html" class="logo">STYLE LAB<span>.</span></a>
+
+        <nav class="menu-principal">
+            <a href="../index.html">Início</a>
+            <a href="estilos.html" class="ativo">Estilos</a>
+            <a href="../index.html#sobre">Sobre</a>
+            <a href="questionario.html" class="menu-destaque">Descubra seu estilo</a>
+            <a href="cores.html">Guia de cores</a>
+        </nav>
+    </header>
+
+    <main class="pagina-estilos">
+
+        <section class="estilos-banner">
+            <span class="texto-label">STYLE DISCOVERY</span>
+            <h1>Explore seu universo.</h1>
+            <p>
+                Conheça diferentes estilos, encontre inspirações e descubra
+                novas formas de expressar sua personalidade através da moda.
+            </p>
+        </section>
+
+        <section class="catalogo-estilos container-fluid">
+
+            <div class="catalogo-topo">
+                <div>
+                    <span class="texto-label">EXPLORE A CURADORIA</span>
+                    <h2>Estilos de moda</h2>
+                </div>
+
+                <p id="contadorEstilos">13 estilos para explorar</p>
+            </div>
+
+            <div class="catalogo-controles">
+                <div class="campo-pesquisa">
+                    <input type="search" id="pesquisaEstilo"
+                           placeholder="Pesquisar um estilo..."
+                           aria-label="Pesquisar estilos de moda">
+                </div>
+
+                <div class="filtros-estilos" role="group" aria-label="Filtrar estilos">
+                    <button class="filtro-estilo ativo" data-filtro="todos">Todos</button>
+                    <button class="filtro-estilo" data-filtro="casual">Casual</button>
+                    <button class="filtro-estilo" data-filtro="urbano">Urbano</button>
+                    <button class="filtro-estilo" data-filtro="classico">Clássico</button>
+                    <button class="filtro-estilo" data-filtro="alternativo">Alternativo</button>
+                    <button class="filtro-estilo" data-filtro="outros">Outros</button>
+                </div>
+            </div>
+
+            <div class="row g-4" id="gradeEstilos">
+
+                <!-- Boho -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="outros" data-nome="boho">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Boho">
+                        <div class="estilo-catalogo-info">
+                            <span>01 / LIVRE E NATURAL</span>
+                            <h3>Boho</h3>
+                            <p>Uma mistura de referências artesanais, tecidos fluidos, estampas e elementos naturais.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Casual -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="casual" data-nome="casual">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Casual">
+                        <div class="estilo-catalogo-info">
+                            <span>02 / COTIDIANO</span>
+                            <h3>Casual</h3>
+                            <p>Praticidade e conforto com peças versáteis para diferentes momentos do dia.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Clássico -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="classico" data-nome="classico">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Clássico">
+                        <div class="estilo-catalogo-info">
+                            <span>03 / ELEGÂNCIA</span>
+                            <h3>Clássico</h3>
+                            <p>Modelagens tradicionais, peças atemporais e combinações elegantes.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Punk -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="alternativo" data-nome="punk">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Punk">
+                        <div class="estilo-catalogo-info">
+                            <span>04 / REBELDIA</span>
+                            <h3>Punk</h3>
+                            <p>Expressão contestadora com peças marcantes, contrastes e atitude.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Gótico -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="alternativo" data-nome="gotico">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Gótico">
+                        <div class="estilo-catalogo-info">
+                            <span>05 / SOMBRIO</span>
+                            <h3>Gótico</h3>
+                            <p>Estética dramática, tons escuros, texturas e elementos expressivos.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Hip Hop -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="urbano" data-nome="hip hop">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Hip Hop">
+                        <div class="estilo-catalogo-info">
+                            <span>06 / CULTURA URBANA</span>
+                            <h3>Hip Hop</h3>
+                            <p>Influenciado pela cultura musical, com peças amplas, acessórios e personalidade.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Skater -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="urbano" data-nome="skater">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Skater">
+                        <div class="estilo-catalogo-info">
+                            <span>07 / SKATE</span>
+                            <h3>Skater</h3>
+                            <p>Roupas confortáveis, camisetas, calças soltas e referências do skate.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Streetwear -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="urbano" data-nome="streetwear">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Streetwear">
+                        <div class="estilo-catalogo-info">
+                            <span>08 / STREET CULTURE</span>
+                            <h3>Streetwear</h3>
+                            <p>Moda urbana, silhuetas oversized, sneakers e referências contemporâneas.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Glam -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="outros" data-nome="glam">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Glam">
+                        <div class="estilo-catalogo-info">
+                            <span>09 / SOFISTICAÇÃO</span>
+                            <h3>Glam</h3>
+                            <p>Brilho, destaque, peças impactantes e uma estética marcante.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Country -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="outros" data-nome="country">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1519690889869-9a5a1a7f4a6c?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Country">
+                        <div class="estilo-catalogo-info">
+                            <span>10 / WESTERN</span>
+                            <h3>Country</h3>
+                            <p>Influências do campo, botas, jeans, couro e elementos western.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Minimalista -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="classico" data-nome="minimalista">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Minimalista">
+                        <div class="estilo-catalogo-info">
+                            <span>11 / SIMPLICIDADE</span>
+                            <h3>Minimalista</h3>
+                            <p>Linhas limpas, paleta reduzida e escolhas intencionais.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Old Money -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="classico" data-nome="old money">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Old Money">
+                        <div class="estilo-catalogo-info">
+                            <span>12 / TRADIÇÃO</span>
+                            <h3>Old Money</h3>
+                            <p>Referências clássicas, tons neutros, alfaiataria e aparência refinada.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Grunge -->
+                <div class="col-12 col-sm-6 col-lg-4 card-estilo-catalogo" data-categoria="alternativo" data-nome="grunge">
+                    <article class="estilo-catalogo">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85" alt="Referência de estilo Grunge">
+                        <div class="estilo-catalogo-info">
+                            <span>13 / DESCONSTRUÇÃO</span>
+                            <h3>Grunge</h3>
+                            <p>Sobreposições, peças desgastadas, xadrez e estética despojada.</p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="mensagem-vazia" id="mensagemVazia" hidden>
+                <h3>Nenhum estilo encontrado.</h3>
+                <p>Tente outra busca ou selecione uma categoria diferente.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <a href="../index.html" class="logo">STYLE LAB<span>.</span></a>
+        <p>Descubra seu estilo. Construa sua identidade.</p>
+        <span class="footer-direitos">© 2026 STYLE LAB — Projeto acadêmico</span>
+    </footer>
+
+    <script src="../js/estilos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

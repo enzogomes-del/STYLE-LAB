@@ -5,48 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STYLE LAB | Descubra seu estilo</title>
-
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/questionario.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cores.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/montar-look.css">
 </head>
 <body>
 
-    <main class="questionario">
+    <header class="site-header">
+        <a href="index.html" class="logo">STYLE LAB<span>.</span></a>
 
-        <header class="cabecalho">
-            <h1>STYLE LAB</h1>
-            <p>Descubra seu estilo. Construa sua identidade.</p>
-        </header>
+        <nav class="menu-principal">
+            <a href="index.html">Início</a>
+            <a href="paginas/questionario.html">Questionário</a>
+            <a href="paginas/estilos.html">Estilos</a>
+            <a href="paginas/cores.html">Cores</a>
+            <a href="paginas/montar-look.html">Montar Look</a>
+        </nav>
+    </header>
 
-        <section class="introducao" id="introducao">
-            <h2>Descubra seu estilo pessoal</h2>
-            <p>
-                Responda algumas perguntas e descubra quais estilos
-                mais combinam com sua personalidade e preferências.
-            </p>
+    <main>
 
-            <button id="iniciarQuestionario">
-                Começar questionário
-            </button>
+        <section class="hero">
+            <div class="hero-texto">
+                <span class="hero-etiqueta">SEU ESTILO. SUA IDENTIDADE.</span>
+
+                <h1>Vista quem<br>você <span>é.</span></h1>
+
+                <p>
+                    A moda vai além das roupas. Descubra seu estilo,
+                    explore novas possibilidades e encontre formas de
+                    expressar sua personalidade.
+                </p>
+
+                <a href="paginas/questionario.html" class="botao-hero">
+                    Descubra seu estilo <span>↗</span>
+                </a>
+            </div>
+
+            <div class="hero-imagem">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85"
+                     alt="Editorial de moda com roupas e estilo contemporâneo">
+                <span class="hero-legenda">STYLE IS PERSONAL.</span>
+            </div>
         </section>
 
-        <section class="area-perguntas" id="areaPerguntas" hidden>
-
-            <div class="progresso">
-                <span id="etapaAtual">Etapa 1 de 7</span>
-                <progress id="barraProgresso" value="1" max="7"></progress>
+        <section class="secao-estilos" id="estilos">
+            <div class="secao-titulo">
+                <div>
+                    <span class="texto-label">EXPLORE POSSIBILIDADES</span>
+                    <h2>Estilos que contam histórias.</h2>
+                </div>
+                <p>Encontre referências, descubra tendências e construa sua própria identidade visual.</p>
             </div>
 
-            <div id="conteudoPergunta"></div>
+            <div class="grid-estilos">
 
-            <div class="botoes-navegacao">
-                <button id="voltarPergunta" disabled>Voltar</button>
-                <button id="proximaPergunta">Próxima</button>
+                <article class="card-estilo">
+                    <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=800&q=80"
+                         alt="Inspiração de moda casual">
+                    <div class="card-estilo-info">
+                        <span>01 / ESSENCIAL</span>
+                        <h3>Casual</h3>
+                        <p>Conforto, versatilidade e simplicidade no cotidiano.</p>
+                    </div>
+                </article>
+
+                <article class="card-estilo">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+                         alt="Inspiração de moda urbana">
+                    <div class="card-estilo-info">
+                        <span>02 / URBANO</span>
+                        <h3>Streetwear</h3>
+                        <p>Influências urbanas, autenticidade e atitude.</p>
+                    </div>
+                </article>
+
+                <article class="card-estilo">
+                    <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=800&q=80"
+                         alt="Inspiração de estilo minimalista">
+                    <div class="card-estilo-info">
+                        <span>03 / ATEMPORAL</span>
+                        <h3>Minimalista</h3>
+                        <p>Menos excessos, mais intenção em cada escolha.</p>
+                    </div>
+                </article>
+
             </div>
 
+            <div class="estilos-cta">
+                <p>Não sabe qual combina mais com você?</p>
+                <a href="paginas/questionario.html">Faça o nosso questionário →</a>
+            </div>
+        </section>
+
+        <section class="sobre-section" id="sobre">
+            <div class="sobre-imagem">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85"
+                     alt="Pessoa usando um look de moda contemporânea">
+            </div>
+
+            <div class="sobre-texto">
+                <span class="texto-label">SOBRE O STYLE LAB</span>
+                <h2>Seu estilo não precisa seguir regras.</h2>
+                <p>
+                    O STYLE LAB foi criado para ajudar você a explorar o universo da moda,
+                    conhecer diferentes estilos e descobrir o que realmente representa quem você é.
+                </p>
+                <p>
+                    Acreditamos que vestir-se é uma forma de expressão. Aqui, você pode
+                    experimentar, combinar e encontrar sua própria maneira de se apresentar ao mundo.
+                </p>
+                <a href="paginas/questionario.html" class="link-sobre">Comece sua descoberta ↗</a>
+            </div>
+        </section>
+
+        <section class="chamada-final">
+            <span>SEU PRÓXIMO LOOK COMEÇA AQUI</span>
+            <h2>Descubra. Experimente.<br>Seja você.</h2>
+            <a href="paginas/questionario.html" class="botao-hero">Começar agora ↗</a>
         </section>
 
     </main>
 
-    <script src="js/script.js"></script>
+    <footer class="site-footer">
+        <a href="index.html" class="logo">STYLE LAB<span>.</span></a>
+        <p>Descubra seu estilo. Construa sua identidade.</p>
+        <span class="footer-direitos">© 2026 STYLE LAB — Projeto acadêmico</span>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/estilos.js"></script>
+    <script src="../js/cores.js"></script>
+    <script src="../js/montar-look.js"></script>
 </body>
 </html>

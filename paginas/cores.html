@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Cores | STYLE LAB</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="../index.html" class="logo">STYLE LAB<span>.</span></a>
+
+        <nav class="menu-principal">
+            <a href="../index.html">Início</a>
+            <a href="questionario.html">Questionário</a>
+            <a href="estilos.html">Estilos</a>
+            <a href="cores.html">Cores</a>
+            <a href="montar-look.html">Montar Look</a>
+        </nav>
+    </header>
+
+    <main class="pagina-cores">
+
+        <section class="cores-banner">
+            <span class="texto-label">COLOR YOUR STYLE</span>
+            <h1>Cor também<br>é identidade.</h1>
+            <p>
+                Descubra como diferentes cores podem transformar um look.
+                Explore paletas, experimente combinações e encontre
+                novas possibilidades para o seu guarda-roupa.
+            </p>
+        </section>
+
+        <section class="guia-cores container-fluid">
+
+            <div class="guia-cores-titulo">
+                <span class="texto-label">GUIA DE COMBINAÇÕES</span>
+                <h2>Explore as paletas</h2>
+                <p>Selecione uma paleta para conhecer suas cores e inspirações.</p>
+            </div>
+
+            <div class="grade-paletas">
+
+                <article class="paleta-card" data-paleta="neutros">
+                    <div class="paleta-amostras">
+                        <span style="background:#E9E1D5"></span>
+                        <span style="background:#B8A38B"></span>
+                        <span style="background:#786553"></span>
+                        <span style="background:#292725"></span>
+                    </div>
+                    <div class="paleta-info">
+                        <span>01 / VERSÁTIL</span>
+                        <h3>Neutros</h3>
+                        <p>Elegância e facilidade para combinar.</p>
+                        <button class="botao-paleta" data-paleta="neutros">Explorar paleta ↗</button>
+                    </div>
+                </article>
+
+                <article class="paleta-card" data-paleta="terrosos">
+                    <div class="paleta-amostras">
+                        <span style="background:#A65C38"></span>
+                        <span style="background:#C58C62"></span>
+                        <span style="background:#8C7355"></span>
+                        <span style="background:#574334"></span>
+                    </div>
+                    <div class="paleta-info">
+                        <span>02 / NATURAL</span>
+                        <h3>Terrosos</h3>
+                        <p>Calor, natureza e personalidade.</p>
+                        <button class="botao-paleta" data-paleta="terrosos">Explorar paleta ↗</button>
+                    </div>
+                </article>
+
+                <article class="paleta-card" data-paleta="frias">
+                    <div class="paleta-amostras">
+                        <span style="background:#C6D2D8"></span>
+                        <span style="background:#829DAA"></span>
+                        <span style="background:#4C6576"></span>
+                        <span style="background:#263B4A"></span>
+                    </div>
+                    <div class="paleta-info">
+                        <span>03 / EQUILÍBRIO</span>
+                        <h3>Tons frios</h3>
+                        <p>Sensação de calma e sofisticação.</p>
+                        <button class="botao-paleta" data-paleta="frias">Explorar paleta ↗</button>
+                    </div>
+                </article>
+
+                <article class="paleta-card" data-paleta="vibrantes">
+                    <div class="paleta-amostras">
+                        <span style="background:#E94B35"></span>
+                        <span style="background:#F0B323"></span>
+                        <span style="background:#2E9D75"></span>
+                        <span style="background:#474BA8"></span>
+                    </div>
+                    <div class="paleta-info">
+                        <span>04 / EXPRESSÃO</span>
+                        <h3>Vibrantes</h3>
+                        <p>Energia, contraste e destaque.</p>
+                        <button class="botao-paleta" data-paleta="vibrantes">Explorar paleta ↗</button>
+                    </div>
+                </article>
+
+                <article class="paleta-card" data-paleta="monocromaticas">
+                    <div class="paleta-amostras">
+                        <span style="background:#D5C6BE"></span>
+                        <span style="background:#B89A8C"></span>
+                        <span style="background:#8C6E61"></span>
+                        <span style="background:#59453D"></span>
+                    </div>
+                    <div class="paleta-info">
+                <span>05 / UNIDADE</span>
+                        <h3>Monocromáticas</h3>
+                        <p>Variações de uma mesma cor.</p>
+                        <button class="botao-paleta" data-paleta="monocromaticas">Explorar paleta ↗</button>
+                    </div>
+                </article>
+
+                <article class="paleta-card" data-paleta="contraste">
+                    <div class="paleta-amostras">
+                        <span style="background:#F2D94E"></span>
+                        <span style="background:#5D8D46"></span>
+                        <span style="background:#3A5596"></span>
+                        <span style="background:#CB4545"></span>
+                    </div>
+                    <div class="paleta-info">
+                    <span>06 / OUSADIA</span>
+                        <h3>Contrastes</h3>
+                        <p>Combinações que chamam a atenção.</p>
+                        <button class="botao-paleta" data-paleta="contraste">Explorar paleta ↗</button>
+                    </div>
+                </article>
+
+            </div>
+
+            <section class="detalhe-paleta" id="detalhePaleta" hidden>
+                <div class="detalhe-paleta-cabecalho">
+                    <div>
+                        <span class="texto-label">PALETA SELECIONADA</span>
+                        <h2 id="nomePaleta">Nome da paleta</h2>
+                        <p id="descricaoPaleta"></p>
+                    </div>
+                    <button id="fecharPaleta" class="botao-fechar" aria-label="Fechar paleta">✕</button>
+                </div>
+
+                <div id="coresDetalhe" class="cores-detalhe"></div>
+
+                <div class="combinacao-sugestao">
+                    <h3>Como combinar</h3>
+                    <p id="sugestaoPaleta"></p>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="dicas-cores">
+            <div class="dicas-cores-cabecalho">
+                <span class="texto-label">PEQUENO GUIA</span>
+                <h2>Como combinar<br>sem complicar.</h2>
+            </div>
+
+            <div class="grade-dicas">
+                <article class="dica-cor">
+                    <span>01</span>
+                    <h3>Comece pelo básico</h3>
+                    <p>Use uma cor neutra como base e acrescente outras cores aos poucos.</p>
+                </article>
+
+                <article class="dica-cor">
+                    <span>02</span>
+                    <h3>Experimente contrastes</h3>
+                    <p>Combine cores diferentes para criar destaque e deixar o visual mais interessante.</p>
+                </article>
+
+                <article class="dica-cor">
+                    <span>03</span>
+                    <h3>Use o que você gosta</h3>
+                    <p>As combinações são sugestões. O mais importante é sentir-se bem com o que veste.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="cores-cta">
+            <span>DESCUBRA SEU ESTILO</span>
+            <h2>Seu jeito de combinar.<br>Seu jeito de ser.</h2>
+            <a href="questionario.html" class="botao-hero">Fazer o questionário ↗</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <a href="../index.html" class="logo">STYLE LAB<span>.</span></a>
+        <p>Descubra seu estilo. Construa sua identidade.</p>
+        <span class="footer-direitos">© 2026 STYLE LAB — Projeto acadêmico</span>
+    </footer>
+
+    <script src="../js/cores.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

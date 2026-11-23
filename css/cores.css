@@ -1,0 +1,323 @@
+
+/* ==========================================
+   GUIA DE CORES
+   ========================================== */
+
+   .cores-banner {
+    padding: 80px 8%;
+    background: #eae5dc;
+}
+
+.cores-banner h1 {
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-weight: 900;
+    letter-spacing: -.07em;
+    line-height: .98;
+    margin: 20px 0;
+}
+
+.cores-banner p {
+    max-width: 620px;
+    color: var(--cinza);
+    font-size: 1.05rem;
+}
+
+.guia-cores {
+    padding: 65px 5% 85px;
+}
+
+.guia-cores-titulo {
+    margin-bottom: 35px;
+}
+
+.guia-cores-titulo h2 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    margin: 12px 0;
+    letter-spacing: -.05em;
+}
+
+.guia-cores-titulo p {
+    color: var(--cinza);
+}
+
+.grade-paletas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.paleta-card {
+    border: 1px solid var(--borda);
+    background: var(--branco);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.paleta-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra);
+}
+
+.paleta-amostras {
+    display: flex;
+    height: 155px;
+}
+
+.paleta-amostras span {
+    flex: 1;
+    transition: flex .3s;
+}
+
+.paleta-card:hover .paleta-amostras span:hover {
+    flex: 1.5;
+}
+
+.paleta-info {
+    padding: 22px;
+}
+
+.paleta-info > span {
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--oliva);
+    letter-spacing: .13em;
+}
+
+.paleta-info h3 {
+    font-size: 1.7rem;
+    margin: 8px 0;
+}
+
+.paleta-info p {
+    color: var(--cinza);
+    margin-bottom: 18px;
+}
+
+.botao-paleta {
+    border: 1px solid var(--preto);
+    color: var(--preto);
+    background: transparent;
+    border-radius: 30px;
+    padding: 9px 17px;
+    font-size: .85rem;
+}
+
+.botao-paleta:hover {
+    color: var(--branco);
+}
+
+/* Detalhes da paleta */
+
+.detalhe-paleta {
+    margin-top: 50px;
+    padding: 35px;
+    background: #eae5dc;
+    border-radius: var(--raio);
+}
+
+.detalhe-paleta-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.detalhe-paleta-cabecalho h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.detalhe-paleta-cabecalho p {
+    max-width: 650px;
+    color: var(--cinza);
+}
+
+.botao-fechar {
+    background: transparent;
+    color: var(--preto);
+    border: 1px solid var(--borda);
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.botao-fechar:hover {
+    color: white;
+}
+
+.cores-detalhe {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.cor-individual {
+    overflow: hidden;
+    background: var(--branco);
+    border-radius: 10px;
+}
+
+.cor-amostra {
+    height: 160px;
+}
+
+.cor-nome {
+    padding: 14px;
+}
+
+.cor-nome h4 {
+    font-size: 1rem;
+    margin: 0 0 5px;
+}
+
+.cor-nome p {
+    margin: 0;
+    color: var(--cinza);
+    font-size: .8rem;
+}
+
+.combinacao-sugestao {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--borda);
+}
+
+.combinacao-sugestao h3 {
+    font-size: 1.2rem;
+}
+
+.combinacao-sugestao p {
+    margin-bottom: 0;
+    color: var(--cinza);
+}
+
+/* Dicas */
+
+.dicas-cores {
+    padding: 80px 5%;
+    background: var(--branco);
+}
+
+.dicas-cores-cabecalho h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 900;
+    letter-spacing: -.05em;
+    margin: 15px 0 40px;
+}
+
+.grade-dicas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.dica-cor {
+    padding: 25px;
+    border-top: 1px solid var(--borda);
+}
+
+.dica-cor > span {
+    color: var(--oliva);
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.dica-cor h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4rem;
+}
+
+.dica-cor p {
+    color: var(--cinza);
+    margin: 0;
+}
+
+.cores-cta {
+    text-align: center;
+    padding: 85px 20px;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+.cores-cta > span {
+    font-size: .75rem;
+    letter-spacing: .18em;
+    color: #c1b39f;
+}
+
+.cores-cta h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -.05em;
+    margin: 25px 0;
+}
+
+.cores-cta .botao-hero {
+    background: var(--off-white);
+    color: var(--preto);
+}
+
+.cores-cta .botao-hero:hover {
+    background: var(--oliva);
+    color: white;
+}
+
+/* Responsividade do guia de cores */
+
+@media (max-width: 900px) {
+    .grade-paletas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cores-detalhe {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grade-dicas {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cores-banner {
+        padding: 55px 6%;
+    }
+
+    .guia-cores {
+        padding: 45px 4% 60px;
+    }
+
+    .grade-paletas {
+        grid-template-columns: 1fr;
+    }
+
+    .paleta-amostras {
+        height: 125px;
+    }
+
+    .detalhe-paleta {
+        padding: 20px;
+    }
+
+    .detalhe-paleta-cabecalho h2 {
+        font-size: 2rem;
+    }
+
+    .cores-detalhe {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cor-amostra {
+        height: 120px;
+    }
+
+    .dicas-cores {
+        padding: 55px 5%;
+    }
+}
