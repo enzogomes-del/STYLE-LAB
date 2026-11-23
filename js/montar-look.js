@@ -38,6 +38,20 @@ const limparLook = document.getElementById("limparLook");
 const salvarLook = document.getElementById("salvarLook");
 const mensagemLook = document.getElementById("mensagemLook");
 
+// Elementos extras do preview: progresso e paleta de cores
+const previewStatus = document.createElement("div");
+previewStatus.classList.add("preview-status");
+previewConteudo.insertAdjacentElement("afterend", previewStatus);
+
+// Ordem fixa das categorias no preview
+const ordemCategorias = ["camisas", "calcas", "calcados", "acessorios"];
+const nomesCategorias = {
+    camisas: "Parte de cima",
+    calcas: "Parte de baixo",
+    calcados: "Calçados",
+    acessorios: "Acessórios"
+};
+
 // Peças escolhidas pelo usuário
 let categoriaAtual = "camisas";
 let lookSelecionado = {};
@@ -88,8 +102,9 @@ function selecionarPeca(categoria, peca) {
 function atualizarPreview() {
     previewConteudo.innerHTML = "";
     listaSelecionadas.innerHTML = "";
+    previewStatus.innerHTML = "";
 
-    const categorias = Object.keys(lookSelecionado);
+    const categorias = ordemCategorias.filter(categoria => lookSelecionado[categoria]);
 
     if (categorias.length === 0) {
         previewConteudo.innerHTML = `
@@ -98,29 +113,48 @@ function atualizarPreview() {
                 <p>Selecione peças para visualizar sua combinação.</p>
             </div>
         `;
-
+        previewStatus.innerHTML = `
+            <div class="preview-progresso">
+                <div class="progresso-texto"><span>Seu look</span><strong>0 de 4 categorias</strong></div>
+                <div class="progresso-trilho"><span style="width: 0%"></span></div>
+            </div>
+        `;
         listaSelecionadas.innerHTML = "<li>Nenhuma peça selecionada.</li>";
         return;
     }
 
     categorias.forEach(categoria => {
         const peca = lookSelecionado[categoria];
-
         const itemPreview = document.createElement("div");
         itemPreview.classList.add("preview-item");
-
+        itemPreview.style.setProperty("--cor-peca", peca.cor);
         itemPreview.innerHTML = `
-            <div class="peca-icone">${peca.icone}</div>
+            <span class="preview-categoria">${nomesCategorias[categoria]}</span>
+            <div class="preview-visual"><span class="peca-icone">${peca.icone}</span></div>
             <p>${peca.nome}</p>
-            <span class="peca-cor" style="background-color: ${peca.cor}"></span>
+            <span class="preview-cor" style="background-color: ${peca.cor}" title="Cor da peça"></span>
         `;
-
         previewConteudo.appendChild(itemPreview);
 
         const itemLista = document.createElement("li");
-        itemLista.textContent = peca.nome;
+        itemLista.textContent = `${nomesCategorias[categoria]}: ${peca.nome}`;
         listaSelecionadas.appendChild(itemLista);
     });
+
+
+    const total = categorias.length;
+    const porcentagem = (total / ordemCategorias.length) * 100;
+    const cores = categorias.map(categoria => lookSelecionado[categoria].cor);
+    previewStatus.innerHTML = `
+        <div class="preview-progresso">
+            <div class="progresso-texto"><span>Composição do look</span><strong>${total} de 4 categorias</strong></div>
+            <div class="progresso-trilho"><span style="width: ${porcentagem}%"></span></div>
+        </div>
+        <div class="preview-paleta">
+            <span>Paleta selecionada</span>
+            <div class="paleta-cores">${cores.map(cor => `<span style="background-color: ${cor}" title="${cor}"></span>`).join("")}</div>
+        </div>
+    `;
 }
 
 // Trocar categoria
