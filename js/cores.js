@@ -73,7 +73,6 @@ const paletas = {
     }
 };
 
-// Elementos do HTML
 const botoesPaleta = document.querySelectorAll(".botao-paleta");
 const detalhePaleta = document.getElementById("detalhePaleta");
 const nomePaleta = document.getElementById("nomePaleta");
@@ -106,7 +105,7 @@ function mostrarPaleta(chave) {
             </div>
         `;
 
-        // Copia o hexadecimal ao clicar na cor
+        
         elementoCor.querySelector(".cor-amostra").addEventListener("click", () => {
             navigator.clipboard.writeText(cor.hex)
                 .then(() => {

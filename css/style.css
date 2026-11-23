@@ -1,7 +1,5 @@
 
-/* ==========================================
-   STYLE LAB — CSS PRINCIPAL
-   ========================================== */
+/* CSS pricnipal m*/
 
    :root {
     --preto: #171717;
@@ -50,9 +48,7 @@ input {
     display: none !important;
 }
 
-/* ==========================================
-   CABEÇALHO / MENU
-   ========================================== */
+/* Menu */
 
 .site-header {
     width: 100%;
@@ -102,9 +98,7 @@ input {
 }
 
 
-/* ==========================================
-   CHAMADA FINAL E RODAPÉ
-   ========================================== */
+/* Chamda final */
 
 .chamada-final {
     text-align: center;
@@ -189,9 +183,7 @@ button:disabled {
 }
 
 
-/* ==========================================
-   RESPONSIVIDADE
-   ========================================== */
+/* Responsividade */
 
 @media (max-width: 900px) {
     .hero {

@@ -1,7 +1,5 @@
 
-/* ==========================================
-   GUIA DE CORES
-   ========================================== */
+/* guia de cores */
 
    .cores-banner {
     padding: 80px 8%;
@@ -106,7 +104,7 @@
     color: var(--branco);
 }
 
-/* Detalhes da paleta */
+/* detalhes da paleta */
 
 .detalhe-paleta {
     margin-top: 50px;
@@ -194,7 +192,7 @@
     color: var(--cinza);
 }
 
-/* Dicas */
+/* dicas */
 
 .dicas-cores {
     padding: 80px 5%;
@@ -266,7 +264,7 @@
     color: white;
 }
 
-/* Responsividade do guia de cores */
+/* Responsividade */
 
 @media (max-width: 900px) {
     .grade-paletas {

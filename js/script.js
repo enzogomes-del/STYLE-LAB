@@ -1,4 +1,3 @@
-
 // Cadastro dos estilos
 const estilos = {
     Boho: { identidade: "livre, artí­stica e natural", elementosVisuais: ["Tecidos fluidos", "Estampas", "Franjas", "Peças artesanais", "Tons terrosos"], caracteristicas: ["Criatividade", "Liberdade", "Expressividade"] },
@@ -38,7 +37,7 @@ const mapaCores = {
 };
 
 const mapaPecas = {
-    "Camisetas bÃ¡sicas": ["Casual", "Minimalista"],
+    "Camisetas básicas": ["Casual", "Minimalista"],
     "Camisetas estampadas": ["Streetwear", "Skaters", "Grunge"],
     "Camisas": ["Classico", "OldMoney", "Country"],
     "Polos": ["Classico", "OldMoney", "Casual"],

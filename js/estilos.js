@@ -1,5 +1,3 @@
-
-// Elementos da página
 const pesquisaEstilo = document.getElementById("pesquisaEstilo");
 const filtrosEstilos = document.querySelectorAll(".filtro-estilo");
 const cardsEstilos = document.querySelectorAll(".card-estilo-catalogo");

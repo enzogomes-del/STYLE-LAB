@@ -178,7 +178,7 @@ limparLook.addEventListener("click", () => {
     atualizarPreview();
 });
 
-// Salvar combinação no navegador
+// Salvar combinação
 salvarLook.addEventListener("click", () => {
     if (Object.keys(lookSelecionado).length === 0) {
         mensagemLook.textContent = "Selecione pelo menos uma peça antes de salvar.";
