@@ -426,3 +426,61 @@
         padding: 55px 5%;
     }
 }
+
+
+/* Ajustes do modo escuro - Montar Look */
+
+[data-tema="escuro"] .montar-look-banner,
+[data-tema="escuro"] .preview-conteudo,
+[data-tema="escuro"] .progresso-trilho {
+    background: var(--fundo-card);
+}
+
+[data-tema="escuro"] .peca-look,
+[data-tema="escuro"] .preview-look,
+[data-tema="escuro"] .preview-item,
+[data-tema="escuro"] .montar-look-dicas {
+    background: var(--fundo-card);
+    color: var(--texto);
+}
+
+[data-tema="escuro"] .peca-look p,
+[data-tema="escuro"] .montar-look-banner p,
+[data-tema="escuro"] .montador-titulo p,
+[data-tema="escuro"] .dicas-look-grid p,
+[data-tema="escuro"] .preview-resumo ul {
+    color: var(--texto-secundario);
+}
+
+[data-tema="escuro"] .categoria-roupa {
+    color: var(--texto);
+    border-color: var(--borda);
+}
+
+[data-tema="escuro"] .categoria-roupa.ativo,
+[data-tema="escuro"] .categoria-roupa:hover {
+    background: var(--texto);
+    color: var(--fundo);
+    border-color: var(--texto);
+}
+
+[data-tema="escuro"] .peca-look.selecionada {
+    background: #30372e;
+}
+
+[data-tema="escuro"] .botao-limpar {
+    color: var(--texto);
+}
+
+[data-tema="escuro"] .progresso-texto strong {
+    color: var(--texto);
+}
+
+[data-tema="escuro"] .preview-visual {
+    background: color-mix(in srgb, var(--cor-peca) 25%, #242424);
+}
+
+[data-tema="escuro"] .botao-salvar-look {
+    background: var(--texto);
+    color: var(--fundo);
+}

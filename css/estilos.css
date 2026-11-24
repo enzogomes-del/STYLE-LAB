@@ -171,3 +171,54 @@
         padding: 8px 14px;
     }
 }
+
+
+/* Ajustes do modo escuro - Estilos */
+
+[data-tema="escuro"] .estilos-banner {
+    background: var(--fundo-card);
+}
+
+[data-tema="escuro"] .estilos-banner p {
+    color: var(--texto-secundario);
+}
+
+[data-tema="escuro"] .campo-pesquisa input {
+    background: var(--fundo-card);
+    color: var(--texto);
+    border-color: var(--borda);
+}
+
+[data-tema="escuro"] .campo-pesquisa input::placeholder {
+    color: var(--texto-secundario);
+}
+
+[data-tema="escuro"] .filtro-estilo {
+    background: transparent;
+    color: var(--texto);
+    border-color: var(--borda);
+}
+
+[data-tema="escuro"] .filtro-estilo:hover,
+[data-tema="escuro"] .filtro-estilo.ativo {
+    background: var(--texto);
+    color: var(--fundo);
+    border-color: var(--texto);
+}
+
+[data-tema="escuro"] .estilo-catalogo {
+    background: var(--fundo-card);
+    color: var(--texto);
+}
+
+[data-tema="escuro"] .estilo-catalogo-info p {
+    color: var(--texto-secundario);
+}
+
+[data-tema="escuro"] .mensagem-vazia {
+    color: var(--texto-secundario);
+}
+
+[data-tema="escuro"] .mensagem-vazia h3 {
+    color: var(--texto);
+}

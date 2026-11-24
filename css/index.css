@@ -248,3 +248,98 @@
 .sobre-imagem {
     height: 400px;
 }
+
+/* Ccarrossel dos estilos */
+
+.carrossel-estilos {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carrossel-janela {
+    width: 100%;
+    max-width: 650px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carrossel-trilho {
+    display: flex;
+    transition: transform .45s ease;
+}
+
+.carrossel-trilho .card-estilo {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.carrossel-trilho .card-estilo img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.carrossel-seta {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border: 1px solid var(--borda);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--preto);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.carrossel-seta:hover {
+    background: var(--preto);
+    color: var(--branco);
+}
+
+.carrossel-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.indicador {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #c5bdb1;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.indicador.ativo {
+    width: 26px;
+    border-radius: 10px;
+    background: var(--preto);
+}
+
+/* responsividade */
+
+@media (max-width: 600px) {
+
+    .carrossel-estilos {
+        gap: 10px;
+    }
+
+    .carrossel-seta {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+
+    .carrossel-trilho .card-estilo img {
+        height: 280px;
+    }
+
+}

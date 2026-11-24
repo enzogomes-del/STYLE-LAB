@@ -27,6 +27,9 @@
             <a href="paginas/estilos.html">Estilos</a>
             <a href="paginas/cores.html">Cores</a>
             <a href="paginas/montar-look.html">Montar Look</a>
+            <button id="botao-tema" class="botao-tema" type="button">
+                ☀️ Modo claro
+            </button>
         </nav>
     </header>
 
@@ -65,38 +68,58 @@
                 <p>Encontre referências, descubra tendências e construa sua própria identidade visual.</p>
             </div>
 
-            <div class="grid-estilos">
+            <div class="carrossel-estilos">
 
-                <article class="card-estilo">
-                    <img src="https://i.pinimg.com/736x/70/1f/87/701f872246c061204caf73cade634ef6.jpg"
-                         alt="Inspiração de moda casual">
-                    <div class="card-estilo-info">
-                        <span>01 / ESSENCIAL</span>
-                        <h3>Casual</h3>
-                        <p>Conforto, versatilidade e simplicidade no cotidiano.</p>
+                <button class="carrossel-seta anterior" aria-label="Estilo anterior">
+                    &#8592;
+                </button>
+
+                <div class="carrossel-janela">
+                    <div class="carrossel-trilho">
+
+                        <article class="card-estilo">
+                            <img src="https://i.pinimg.com/736x/70/1f/87/701f872246c061204caf73cade634ef6.jpg"
+                                alt="Inspiração de moda casual">
+                            <div class="card-estilo-info">
+                                <span>01 / ESSENCIAL</span>
+                                <h3>Casual</h3>
+                                <p>Conforto, versatilidade e simplicidade no cotidiano.</p>
+                            </div>
+                        </article>
+
+                        <article class="card-estilo">
+                            <img src="https://i.pinimg.com/1200x/b2/35/95/b23595df7be20e4725d258363344dc58.jpg"
+                                alt="Inspiração de moda urbana">
+                            <div class="card-estilo-info">
+                                <span>02 / URBANO</span>
+                                <h3>Streetwear</h3>
+                                <p>Influências urbanas, autenticidade e atitude.</p>
+                            </div>
+                        </article>
+
+                        <article class="card-estilo">
+                            <img src="https://i.pinimg.com/1200x/f0/03/0a/f0030a00130752f6ad9549077902abad.jpg"
+                                alt="Inspiração de estilo minimalista">
+                            <div class="card-estilo-info">
+                                <span>03 / ATEMPORAL</span>
+                                <h3>Minimalista</h3>
+                                <p>Menos excessos, mais intenção em cada escolha.</p>
+                            </div>
+                        </article>
+
                     </div>
-                </article>
+                </div>
 
-                <article class="card-estilo">
-                    <img src="https://i.pinimg.com/1200x/b2/35/95/b23595df7be20e4725d258363344dc58.jpg"
-                         alt="Inspiração de moda urbana">
-                    <div class="card-estilo-info">
-                        <span>02 / URBANO</span>
-                        <h3>Streetwear</h3>
-                        <p>Influências urbanas, autenticidade e atitude.</p>
-                    </div>
-                </article>
+                <button class="carrossel-seta proximo" aria-label="Próximo estilo">
+                    &#8594;
+                </button>
 
-                <article class="card-estilo">
-                    <img src="https://i.pinimg.com/1200x/f0/03/0a/f0030a00130752f6ad9549077902abad.jpg"
-                         alt="Inspiração de estilo minimalista">
-                    <div class="card-estilo-info">
-                        <span>03 / ATEMPORAL</span>
-                        <h3>Minimalista</h3>
-                        <p>Menos excessos, mais intenção em cada escolha.</p>
-                    </div>
-                </article>
+            </div>
 
+            <div class="carrossel-indicadores">
+                <button class="indicador ativo" aria-label="Mostrar estilo 1"></button>
+                <button class="indicador" aria-label="Mostrar estilo 2"></button>
+                <button class="indicador" aria-label="Mostrar estilo 3"></button>
             </div>
 
             <div class="estilos-cta">
@@ -134,16 +157,45 @@
 
     </main>
 
+    
     <footer class="site-footer">
-        <a href="index.html" class="logo">STYLE LAB<span>.</span></a>
-        <p>Descubra seu estilo. Construa sua identidade.</p>
-        <span class="footer-direitos">© 2026 STYLE LAB — Projeto acadêmico</span>
+
+        <div class="footer-topo">
+            <a href="index.html" class="logo">
+                STYLE LAB<span>.</span>
+            </a>
+
+            <span>Moda &amp; Identidade</span>
+        </div>
+
+        <p class="footer-descricao">
+            Descubra seu estilo. Construa sua identidade.
+        </p>
+
+        <nav class="footer-navegacao">
+            <a href="index.html">Início</a>
+            <a href="paginas/questionario.html">Questionário</a>
+            <a href="paginas/estilos.html">Estilos</a>
+            <a href="paginas/cores.html">Cores</a>
+            <a href="paginas/montar-look.html">Montar Look</a>
+        </nav>
+
+        <hr class="footer-linha">
+
+        <div class="footer-direitos">
+            <span>© 2026 STYLE LAB — Projeto acadêmico</span>
+            <span>Feito para expressar sua identidade.</span>
+        </div>
+
     </footer>
+
 
 
     <script src="../js/script.js"></script>
     <script src="../js/estilos.js"></script>
     <script src="../js/cores.js"></script>
     <script src="../js/montar-look.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/tema.js"></script>
 </body>
 </html>

@@ -319,3 +319,49 @@
         padding: 55px 5%;
     }
 }
+
+
+/* Ajustes do modo escuro - Cores */
+
+[data-tema="escuro"] .cores-banner,
+[data-tema="escuro"] .detalhe-paleta {
+    background: var(--fundo-card);
+}
+
+[data-tema="escuro"] .cores-banner p,
+[data-tema="escuro"] .paleta-info p,
+[data-tema="escuro"] .detalhe-paleta-cabecalho p,
+[data-tema="escuro"] .cor-nome p,
+[data-tema="escuro"] .combinacao-sugestao p,
+[data-tema="escuro"] .dica-cor p {
+    color: var(--texto-secundario);
+}
+
+[data-tema="escuro"] .paleta-card,
+[data-tema="escuro"] .cor-individual,
+[data-tema="escuro"] .dicas-cores {
+    background: var(--fundo-card);
+    color: var(--texto);
+}
+
+[data-tema="escuro"] .botao-paleta,
+[data-tema="escuro"] .botao-fechar {
+    color: var(--texto);
+    border-color: var(--borda);
+}
+
+[data-tema="escuro"] .botao-paleta:hover,
+[data-tema="escuro"] .botao-fechar:hover {
+    background: var(--texto);
+    color: var(--fundo);
+}
+
+[data-tema="escuro"] .cores-cta .botao-hero {
+    background: var(--fundo-card);
+    color: var(--texto);
+}
+
+[data-tema="escuro"] .cores-cta .botao-hero:hover {
+    background: var(--oliva);
+    color: white;
+}
